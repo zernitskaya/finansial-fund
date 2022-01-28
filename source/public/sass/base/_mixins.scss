@@ -1,0 +1,89 @@
+@mixin hover() {
+    @media (hover) {
+      &:hover,
+      &:focus {
+        @content;
+      }
+    }
+}
+
+@mixin focus() {
+    @media (hover) {
+      &:focus {
+        @content;
+      }
+    }
+}
+
+@mixin active {
+  &:active {
+    opacity: .7;
+  }
+}
+
+
+@mixin media-xxx {
+  @media (max-width: 1720px) {
+      @content;
+  }
+}
+
+
+@mixin media-max {
+    @media (max-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media (max-width: 1070px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media (max-width: 980px) {
+        @content;
+    }
+}
+
+@mixin media-exsm {
+    @media (max-width: 760px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin mob {
+  @media (max-width: 320px) {
+      @content;
+  }
+}
+
+@mixin landscape() {
+    @media screen and (min-width: 480px)
+    and (orientation: landscape)
+    and (max-height: 420px)
+    and (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin content {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
