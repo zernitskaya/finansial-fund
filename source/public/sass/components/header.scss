@@ -1,0 +1,28 @@
+.header {
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.header__mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 22px;
+}
+
+.header__logo-wrap {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 24px;
+}
+
+.header__logo-pic {
+  width: 100%;
+}
+
+.header__text {
+  font-size: 13px;
+  color: #90aba0;
+  text-align: center;
+}
+

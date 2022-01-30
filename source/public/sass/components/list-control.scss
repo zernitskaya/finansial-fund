@@ -1,0 +1,22 @@
+.list-control {
+  display: flex;
+}
+
+.list-control__link {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 16px;
+  background-color: #dfe5ea;
+  font-size: 14px;
+  color: #006ea9;
+  @include active;
+}
+
+.list-control__link-icon {
+  margin-right: 7px;
+}
+
+.list-control__item:not(:last-child) {
+  margin-right: 8px;
+}
