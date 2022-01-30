@@ -9,24 +9,39 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
-
 <body>
+  
   @@include('../layouts/header.html')
 
-  <section class="preview content">
-    <h2 class="preview__heading heading">
-      Кто мы
-    </h2>
+  <section class="general-page">
+    <section class="preview content general-page__preview">
+      <h2 class="preview__heading heading">
+        Кто мы
+      </h2>
 
-    <p class="preview__text text">
-      PROJECT 3 – инвестиционный фонд, основной задачей которого является соответствие критериям ESG (социальных,
-      экологических и управленческих). Наша главная задача заключается в том, чтобы ваши сделать ваши инвестиционный
-      процесс максимально эффективным.
-    </p>
+      <p class="preview__text text">
+        PROJECT 3 – инвестиционный фонд, основной задачей которого является соответствие критериям ESG (социальных,
+        экологических и управленческих). Наша главная задача заключается в том, чтобы ваши сделать ваши инвестиционный
+        процесс максимально эффективным.
+      </p>
+
+      <hr class="under-line general-page__under-line">
+      </hr>
+    </section>
+
+    <section class="preview preview-second content general-page__preview">
+      <h2 class="preview__heading preview-second__heading heading">
+        PROJECT 3 – это:
+      </h2>
+
+      <p class="preview__text preview-second__text text">
+        Опыт в инвестировании
+        Наш фонд основали трейдеры и финансисты с практическим опытом инвестирования от 10 лет.
+      </p>
+    </section>
   </section>
-
-
-  @@include('../layouts/script.html')
+  
+   @@include('../layouts/script.html')
 </body>
 
 </html>
