@@ -35,6 +35,12 @@
     }
 }
 
+@mixin media-content {
+  @media (max-width: 1300px) {
+      @content;
+  }
+}
+
 @mixin media-xl {
     @media (max-width: 1200px) {
         @content;
@@ -81,9 +87,8 @@
 }
 
 @mixin content {
-  margin: 0 auto;
-  max-width: 1310px;
-  padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

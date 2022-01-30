@@ -1,0 +1,140 @@
+.nav {
+  border-top: 1px solid #dfe5ea;
+  padding-top: 14px;
+}
+
+.nav__list-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  @include content;
+}
+
+.nav__list {
+  display: flex;
+  position: relative;
+
+  @include media-content {
+    display: block;
+  }
+}
+
+.nav__item {
+  // @include hover {
+  //   .nav_submenu {
+  //     display: block;
+  //   }
+
+  //   .nav__link {
+  //     border-color: #dfe5ea;
+  //   }
+
+  //   .nav__parent-link::before {
+  //     display: block;
+  //   }
+  // }
+
+  &.active {
+    .nav_submenu {
+      display: block;
+    }
+
+    .nav__link {
+      border-color: #dfe5ea;
+    }
+
+    .nav__parent-link::before {
+      display: block;
+    }
+  }
+}
+
+.nav_submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  border: 1px solid #dfe5ea;
+  padding: 10px 30px;
+  width: 100%;
+  border-radius: 2px;
+
+  @include media-content {
+    position: relative;
+    padding: 10px;
+    padding-top: 0;
+  }
+}
+
+.nav__link {
+  position: relative;
+  @include active;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 10px;
+  color: #041c44;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav__link:not(.nav__parent-link) {
+  @include hover {
+    background-color: #e5e5e5;
+    color: #006ea9;
+  }
+}
+
+.nav__parent-link::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #3a8fbc;
+  border-bottom: 2px solid #3a8fbc;
+  transform: rotate(45deg);
+  margin-left: 8px;
+  margin-top: -4px;
+}
+
+.nav__parent-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  z-index: 1;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  display: none;
+}
+
+.nav_submenu-link {
+  @include active;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #041c44;
+
+  @include hover {
+    color: #006ea9;
+  }
+
+  @include media-content {
+    height: 34px;
+  }
+}
+
+.nav_submenu-item:not(:last-child) .nav_submenu-link {
+  border-bottom: 1px solid #dfe5ea;
+}
