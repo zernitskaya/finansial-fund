@@ -1,0 +1,21 @@
+.purpose {
+  display: grid;
+  grid-template-columns: 35% 36% 33%;
+  gap: 20px;
+  padding-top: 35px;
+  // padding: 30px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.purpose__btn-wrap {
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+
+.purpose__btn {
+  color: #ffffff;
+  background-color: #006ea9;
+}
