@@ -1,0 +1,25 @@
+.financial-management {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 59px;
+  padding-top: 35px;
+  // padding: 30px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.financial-management__text-wrap {
+  padding: 22px;
+}
+
+.financial-management__btn-wrap {
+  padding-bottom: 20px;
+  padding-left: 22px;
+}
+
+.financial-management__btn {
+  background-color: #dfe5ea;
+  color: #006ea9;
+}

@@ -1,0 +1,16 @@
+.about:not(:last-child) {
+  border-right: 1px solid #dfe5ea;
+  padding-right: 15px;
+
+  @include media-lg {
+    border: none;
+  }
+}
+
+.about__img-wrap {
+  padding-bottom: 20px;
+}
+
+.about__heading {
+  padding-bottom: 25px;
+}
