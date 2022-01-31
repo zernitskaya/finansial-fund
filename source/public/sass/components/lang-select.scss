@@ -6,6 +6,14 @@
   background-color: #dfe5ea;
   font-size: 14px;
   color: #006ea9;
+
+  @include media-exsm {
+    height: 70px;
+    padding: 16px;
+    align-items: flex-end;
+    width: 120px;
+    text-align: center;
+  }
 }
 
 .lang-select__select {
@@ -16,6 +24,12 @@
   height: 100%;
   padding-left: 36px;
   padding-right: 16px;
+
+  @include media-exsm {
+    height: auto;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .lang-select__icon {
@@ -28,4 +42,12 @@
   width: 14px;
   height: 14px;
   object-fit: contain;
+
+  @include media-exsm {
+    top: 16px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: auto;
+  }
 }

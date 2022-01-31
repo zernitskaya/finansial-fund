@@ -1,0 +1,32 @@
+.open-menu {
+  @include active;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b2d3e5;
+  width: 60px;
+  height: 60px;
+}
+
+.open-menu__text {
+  margin-top: 10px;
+  color: #041c44;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+}
+
+.open-menu__text--close {
+  display: none;
+}
+
+.active {
+  .open-menu__text--close {
+    display: block;
+  }
+
+  .open-menu__text:not(.open-menu__text--close) {
+    display: none;
+  }
+}

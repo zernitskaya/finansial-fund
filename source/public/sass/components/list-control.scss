@@ -11,10 +11,23 @@
   font-size: 14px;
   color: #006ea9;
   @include active;
+
+  @include media-exsm {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 16px 0;
+    width: 120px;
+  }
 }
 
 .list-control__link-icon {
   margin-right: 7px;
+
+  @include media-exsm {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .list-control__item:not(:last-child) {

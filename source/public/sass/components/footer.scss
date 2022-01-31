@@ -1,0 +1,138 @@
+.footer__main-links {
+  padding-top: 36px;
+  padding-bottom: 20px;
+  background-color: #dfe5ea;
+}
+
+.footer__sub-links {
+  padding: 26px 0;
+  background-color: #95abbb;
+}
+
+.footer__copy {
+  padding: 24px 0;
+  background-color: #143d53;
+}
+
+.footer__links-main-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+
+  @include media-exsm {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__main-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main-lin-title {
+  font-size: 16px;
+  color: #041c44;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #95abbb;
+  font-weight: 700;
+}
+
+.footer__main-lin-href {
+  font-size: 14px;
+  color: #006ea9;
+}
+
+a.footer__main-lin-href {
+  @include active;
+}
+
+.footer__main-lin-it:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+  margin-top: auto;
+
+  @include media-exsm {
+    margin-top: 24px;
+  }
+}
+
+.footer__trust-item {
+  padding: 12px;
+}
+
+.footer__links-sub-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
+}
+
+.footer__sub-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include media-exsm {
+    justify-content: center;
+  }
+}
+
+.footer__sub-list-item:not(:last-child) {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #fff;
+}
+
+.footer__sub-list-href {
+  @include active;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.footer__page-top {
+  @include active;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-left: 8px;
+
+  @include media-exsm {
+    margin-left: 0;
+    margin-bottom: 24px;
+    order: -1;
+  }
+}
+
+.footer__page-top-icon {
+  margin-right: 8px;
+}
+
+.footer__links-copy-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
+}
+
+.footer__cop {
+  font-size: 14px;
+  color: #fff;
+
+  @include media-exsm {
+    margin-top: 24px;
+  }
+}

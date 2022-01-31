@@ -1,6 +1,22 @@
 .nav {
   border-top: 1px solid #dfe5ea;
   padding-top: 14px;
+  padding-bottom: 14px;
+
+  @include media-exsm {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: none;
+  }
+}
+
+.active .nav {
+  @include media-exsm {
+    display: block;
+  }
 }
 
 .nav__list-control {
@@ -12,6 +28,15 @@
   justify-content: flex-end;
   margin: auto;
   @include content;
+
+  @include media-exsm {
+    position: static;
+    justify-content: center;
+    background-color: #dfe5ea;
+    margin-right: -20px;
+    margin-left: -20px;
+    width: auto;
+  }
 }
 
 .nav__list {
@@ -45,6 +70,12 @@
 
     .nav__link {
       border-color: #dfe5ea;
+      color: #006ea9;
+
+      @include media-exsm {
+        background-color: #e5e5e5;
+        border: none;
+      }
     }
 
     .nav__parent-link::before {
@@ -69,6 +100,10 @@
     padding: 10px;
     padding-top: 0;
   }
+
+  @include media-exsm {
+    border: none;
+  }
 }
 
 .nav__link {
@@ -86,9 +121,21 @@
   text-transform: uppercase;
 }
 
+.nav__item:not(:last-child) {
+  @include media-exsm {
+    border-bottom: 1px solid #dfe5ea;
+  }
+}
+
 .nav__link:not(.nav__parent-link) {
   @include hover {
     background-color: #e5e5e5;
+    color: #006ea9;
+  }
+}
+
+.nav__parent-link {
+  @include hover {
     color: #006ea9;
   }
 }
@@ -137,4 +184,8 @@
 
 .nav_submenu-item:not(:last-child) .nav_submenu-link {
   border-bottom: 1px solid #dfe5ea;
+
+  @include media-exsm {
+    border: none;
+  }
 }
