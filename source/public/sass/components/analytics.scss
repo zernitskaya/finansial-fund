@@ -1,0 +1,16 @@
+.analytics {
+  background-color: #8ea89d;
+}
+
+.analytics__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+  padding-top: 59px;
+  padding-bottom: 63px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+  }
+}
