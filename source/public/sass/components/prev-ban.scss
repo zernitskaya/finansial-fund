@@ -1,0 +1,51 @@
+.prev-ban {
+  padding-top: 112px;
+  padding-bottom: 70px;
+  background-size: cover;
+  background-position: center;
+
+  @include media-exsm {
+    padding: 70px 0;
+  }
+}
+
+.prev-ban__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prev-ban__btn {
+  @include active;
+  height: 40px;
+  margin-top: 46px;
+
+  @include hover {
+    transform: scale(1.2);
+  }
+}
+
+.prev-ban__main-text {
+  font-size: 28px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @include media-exsm {
+    font-size: 21px;
+  }
+}
+
+.prev-ban__sub-text {
+  width: 100%;
+  max-width: 700px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 14px;
+}

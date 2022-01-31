@@ -7,13 +7,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>finansial fund</title>
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./plugins/owl.carousel.min.css">
 </head>
 
 <body>
-  
+
   @@include('../layouts/header.html')
 
   <section class="general-page">
+    <section class="prev-ban" style="background-image: url('./img/ban1.jpg');">
+      <div class="prev-ban__wrap content">
+        <p class="prev-ban__main-text">
+          Мы делаем все возможное для того, чтобы удовлетворить потребности инвесторов с разных стран и континентов.
+        </p>
+
+        <p class="prev-ban__sub-text">
+          Наше глобальное присутствие, техническая и интеллектуальная база дает возможность решать даже самые сложные задачи и достигать поставленных целей.
+        </p>
+
+        <button class="prev-ban__btn" type="button" id="banBot">
+          <img src="./img/icons/arrow-bot.png" alt="arrow-bot">
+        </button>
+      </div>
+    </section>
+
     <section class="preview content general-page__preview">
       <h2 class="preview__heading heading">
         Кто мы
@@ -40,8 +57,9 @@
       </p>
     </section>
   </section>
-  
-   @@include('../layouts/script.html')
+
+  @@include('../layouts/footer.html')
+  @@include('../layouts/script.html')
 </body>
 
 </html>
