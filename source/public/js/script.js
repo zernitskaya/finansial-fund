@@ -71,3 +71,28 @@ if (banBot) {
     scrollTo(banBot.parentElement.parentElement.clientHeight + header.clientHeight, 400);
   }
 }
+
+$('.js-slider1').owlCarousel({
+  loop:true,
+  nav:true,
+  items: 1,
+  navContainer: '.slider1__nav',
+  dotsContainer: '.slider1__dot'
+})
+
+$('.js-slider2').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+})
