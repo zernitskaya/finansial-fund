@@ -1,3 +1,7 @@
+.trends {
+  padding-top: 30px;
+}
+
 .trends__wrap {
   display: flex;
 
@@ -24,4 +28,10 @@
 
 .trends__text {
   padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include media-exsm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
