@@ -1,0 +1,27 @@
+.trends__wrap {
+  display: flex;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
+}
+
+.trends__img-wrap {
+  width: 100%;
+  padding-right: 32px;
+
+  @include media-exsm {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.trends__img {
+  @include media-md  {
+    width: 100%;
+  }
+}
+
+.trends__text {
+  padding-top: 20px;
+}
