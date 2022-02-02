@@ -1,0 +1,19 @@
+.destination__grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 44px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+}
+
+.destination__preview {
+  text-align: center;
+}
+
+.destination__preview-text {
+  padding-bottom: 10px;
+}

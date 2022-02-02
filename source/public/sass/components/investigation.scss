@@ -1,0 +1,7 @@
+.investigation__grid-wrap {
+  padding-bottom: 54px;
+
+  @include media-lg {
+    padding-bottom: 20px;
+  }
+}

@@ -7,8 +7,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  // padding-top: 59px;
-  // padding-bottom: 63px;
 
   @include media-lg {
     grid-template-columns: 1fr;
