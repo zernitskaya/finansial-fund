@@ -1,0 +1,16 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 14px;
+}
+
+.breadcrumbs__link {
+  @include active;
+}
+
+.breadcrumbs__item:not(:last-child) .breadcrumbs__link:after {
+  content: '\003E';
+  margin-left: 6px;
+  margin-right: 6px;
+}

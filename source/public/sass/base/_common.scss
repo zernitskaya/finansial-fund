@@ -10,6 +10,10 @@ body {
   background: #fff;
 }
 
-.error.error {
-  border: 1px solid #ff0000;
+.modal-open {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
