@@ -1,0 +1,19 @@
+.consulting__grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 62px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+}
+
+.consulting__line {
+  padding-bottom: 30px;
+}
+
+.consulting__heading {
+  text-transform: none;
+}

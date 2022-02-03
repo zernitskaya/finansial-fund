@@ -1,0 +1,31 @@
+.capital-management__grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 62px;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+}
+
+.capital-management__trends {
+  padding-top: 0;
+}
+
+.capital-management__text {
+  padding-top: 5px;
+}
+
+.capital-management__line {
+  padding-bottom: 33px;
+}
+
+.capital-management__previev {
+  padding-bottom: 55px;
+  
+  @include media-lg {
+    padding-bottom: 20px;
+  }
+}
