@@ -97,3 +97,8 @@ $('.js-slider2').owlCarousel({
       }
   }
 })
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})

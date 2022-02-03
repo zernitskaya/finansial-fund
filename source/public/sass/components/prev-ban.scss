@@ -1,19 +1,20 @@
 .prev-ban {
-  padding-top: 112px;
-  padding-bottom: 70px;
   background-size: cover;
   background-position: center;
-
-  @include media-exsm {
-    padding: 70px 0;
-  }
 }
 
 .prev-ban__wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 112px;
+  padding-bottom: 70px;
+
+  @include media-exsm {
+    padding-top: 70px;
+  }
 }
 
 .prev-ban__btn {
@@ -48,4 +49,14 @@
   text-align: center;
   line-height: 1.2;
   font-size: 14px;
+}
+
+.prev-ban__breadcrumbs {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+
+  @include media-exsm {
+    top: 20px;
+  }
 }

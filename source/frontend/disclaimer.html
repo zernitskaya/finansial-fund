@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>finansial fund</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="./plugins/owl.carousel.min.css">
+</head>
+
+<body>
+
+  @@include('../layouts/header.html')
+
+  <!-- Button trigger modal -->
+
+  <button class="btn purpose__btn" type="button"  data-toggle="modal" data-target="#disclaimer">
+    Launch demo modal
+  </button>
+
+  <!-- Bootstrap Modal -->
+
+  <div class="modal-item disclaimer modal" id="disclaimer" tabindex="-1" role="dialog" aria-labelledby="disclaimerLabel" aria-hidden="true">
+    <div class="modal-item__wrap">
+      <div class="modal-item__close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-item__content">
+        <h3 class="modal-item__title">
+          Disclaimer
+        </h3>
+
+        <p class="modal-item__text">
+          Перед тем, как войти на этот сайт, внимательно прочтите следующую информацию <a href="#">Disclaimer</a>. Входя на этот сайт, вы подтверждаете, что прочитали и согласны с условиями. Чтобы узнать, что вы прочитали и согласны с условиями и положениями для входа на наш веб-сайт, пожалуйста, нажмите «Войти на сайт» или, пожалуйста, покиньте наш сайт.
+        </p>
+
+        <div class="modal-item__btn">
+          <button class="btn financial-management__btn" type="button">
+            Отказаться
+          </button>
+
+          <button class="btn purpose__btn" type="button">
+            Войти на сайт
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../layouts/footer.html')
+  @@include('../layouts/script.html')
+
+</body>
+
+</html>

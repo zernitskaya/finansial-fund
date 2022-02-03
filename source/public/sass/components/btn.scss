@@ -1,16 +1,18 @@
 .btn {
-  @include active;
   width: 146px;
   height: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   font-size: 14px;
   border-radius: 3px;
   font-weight: bold;
 
   @include hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
+
+  @include active;
 }
 
