@@ -82,8 +82,9 @@ $('.js-slider1').owlCarousel({
 
 $('.js-slider2').owlCarousel({
   loop:true,
-  margin:10,
+  margin:35,
   nav:true,
+  navContainer: '.slider2__nav',
   responsive:{
       0:{
           items:1
