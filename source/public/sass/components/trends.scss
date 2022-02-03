@@ -37,6 +37,15 @@
 }
 
 .trends__list {
-  list-style-type: disc;
   list-style-position: inside;
+}
+
+.trends__item {
+  list-style-type: none;
+}
+
+.trends__item:before {
+  color: #041c44;
+  content: "●";
+  padding-right: 10px;
 }
