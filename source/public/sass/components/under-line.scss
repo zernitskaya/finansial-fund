@@ -2,8 +2,19 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #dfe5ea;
+}
 
-  // background-color: #dfe5ea;
-  // color: #dfe5ea;
-  // height: 1px;
+.under-line__small-bottom {
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.under-line__big-bottom {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.capital-management__line {
+  padding-bottom: 30px;
+  margin-bottom: 15px;
 }

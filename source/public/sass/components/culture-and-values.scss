@@ -23,3 +23,11 @@
 .culture-and-values__btn {
   margin: 0 auto;
 }
+
+.culture-and-values__heading {
+  padding-top: 40px;
+
+  @include media-lg {
+    padding-top: 20px;
+  }
+}
