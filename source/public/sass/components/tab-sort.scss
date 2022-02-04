@@ -1,0 +1,44 @@
+.tab-sort {
+  display: flex;
+
+  @include media-sm {
+    display: block;
+  }
+}
+
+.tab-sort__btn {
+  width: 244px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: 700;
+  border: 1px solid #006ea9;
+  color: #006ea9;
+  background-color: #fff;
+  text-transform: uppercase;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include active;
+
+  &.active {
+    color: #fff;
+    background-color: #006ea9;
+    text-transform: uppercase;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
+
+    @include media-sm {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

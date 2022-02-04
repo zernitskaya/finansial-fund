@@ -16,7 +16,7 @@
 
   <section class="news-list">
     <div class="news-list__wrap content">
-      <h1 class="news-list__title">
+      <h1 class="news-list__title preview__heading heading">
         Новости
       </h1>
 
@@ -35,18 +35,42 @@
 
         <div class="news-list__search">
           <form class="search-form">
-            <input type="text" class="search-form__input">
-            <img src="./img/icons/search.png" alt="search" class="search-form__icon">
+            <input type="text" class="search-form__input" placeholder="Поиск">
+            <img src="./img/icons/search.png" alt="search" class="search-form__icon" >
           </form>
         </div>
       </section>
 
       <section class="news-list__sect">
-        <h3 class="news-list__title">497 статьи</h3>
+        <h3 class="news-list__title-count">497 статьи</h3>
 
         <ul class="news-list__items">
-          <li class="news-list__item">
+          <li class="news-list__item first-item">
+            @@include('../layouts/news-item.html')
+          </li>
 
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
+          </li>
+
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
+          </li>
+
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
+          </li>
+
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
+          </li>
+
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
+          </li>
+
+          <li class="news-list__item">
+            @@include('../layouts/news-item.html')
           </li>
         </ul>
 
@@ -91,7 +115,7 @@
         </p>
       </section>
 
-      <section class="destination__grid-wrap content">
+      <section class="destination__grid-wrap">
         <div class="about general-page__about">
           <div class="about__img-wrap">
             <img src="./img/icons/activu.png" alt="" class="about__img">
