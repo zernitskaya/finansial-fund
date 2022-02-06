@@ -108,3 +108,14 @@
   object-fit: contain;
   margin-right: 10px;
 }
+
+.contacts-form__heading {
+  font-size: 24px;
+  color: #041c44;
+  font-weight: 700;
+}
+
+.contacts-form__title-wrap {
+  display: flex;
+  justify-content: space-between;
+}

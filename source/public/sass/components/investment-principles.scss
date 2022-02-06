@@ -1,0 +1,81 @@
+.investment-principles {
+  background-color: #f3f5f7;
+  padding-bottom: 35px;
+
+  @include media-exsm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    max-width: 94%;
+  }
+}
+
+.investment-principles__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  @include media-exsm {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+}
+
+.investment-principles__circle-wrap {
+  color: #006ea9;
+}
+
+.investment-principles__cercle {
+  position: relative;
+  left: 90px;
+  border-bottom: 1px solid #006ea9;
+
+
+  @include media-exsm {
+    // border: none;
+    left: 0;
+  }
+}
+
+.investment-principles__cercle-last {
+  border: none;
+
+  @include media-exsm {
+    border-bottom: 1px solid #006ea9;
+    left: 0;
+  }
+}
+
+
+.investment-principles__number {
+  border: 1px solid #006ea9;
+  border-radius: 100%;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  top: -15px;
+  background-color: #f3f5f7;
+}
+
+.investment-principles__number1 {
+  background-color: #006ea9;
+  color: #f3f5f7;
+}
+
+.responsible-investment__heading {
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #041c44;
+}
+
+.investment-principles__text {
+  text-align: center;
+  padding: 35px 15px 0 15px;
+}
