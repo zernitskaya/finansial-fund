@@ -4,7 +4,6 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 300px;
 
   @include media-exsm {
     background-image:  linear-gradient(#2f343f, #2f343f), url("../img/registrationBgMobile.jpg");
@@ -51,14 +50,13 @@
 }
 
 .registration__form-poz {
-  position: absolute;
-  left: 50px;
+  margin-left: 50px;
   max-width: 596px;
 
   @include media-exsm {
     position: relative;
     max-width: 100%;
-    left: 0;
+    margin: 0 auto;
   }
 }
 
@@ -83,7 +81,10 @@
 
 .registration__text-copir {
   color: #ffffff;
-  position: absolute;
-  bottom: -57px;
-  left: 578px;
+  text-align: center;
+  padding-top: 100px;
+  // padding-left: 500px;
+  // position: absolute;
+  // bottom: -57px;
+  // left: 578px;
 }

@@ -6,6 +6,7 @@
   background-color: #dfe5ea;
   font-size: 14px;
   color: #006ea9;
+  flex-shrink: 0;
 
   @include media-exsm {
     height: 70px;
