@@ -4,6 +4,7 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 300px;
 
   @include media-exsm {
     background-image:  linear-gradient(#2f343f, #2f343f), url("../img/registrationBgMobile.jpg");
@@ -78,4 +79,11 @@
 
 .registration__link:hover {
   opacity: .7;
+}
+
+.registration__text-copir {
+  color: #ffffff;
+  position: absolute;
+  bottom: -57px;
+  left: 578px;
 }
